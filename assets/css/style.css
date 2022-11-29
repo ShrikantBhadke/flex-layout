@@ -1,0 +1,322 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  line-height: 1.5;
+}
+
+.header {
+  background-color: black;
+  color: white;
+  display: flex;
+  flex-direction: column;
+
+}
+
+.main-header {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-basis: 200px;
+}
+
+.primrary-heading {
+  text-transform: uppercase;
+  font-size: 36px;
+  text-align: center;
+  padding: 20px;
+}
+
+.main_content_area {
+  background-color: rgb(221, 224, 213);
+}
+
+.navbar {
+  justify-content: space-between;
+  background-color: gold;
+  text-align: center;
+  flex-direction: column;
+}
+
+.navbar li {
+  flex-grow: 1;
+}
+
+.navbar li a {
+  display: block;
+  font-size: 24px;
+  text-transform: uppercase;
+  padding: 20px;
+}
+
+.navbar li a:hover,
+.navbar li a:focus,
+.navbar li a:active {
+  background-color: black;
+  color: gold;
+}
+
+.sideBar {
+  padding: 20px;
+  background-color: rgb(221, 224, 213);
+  flex: 0 0 400px;
+
+}
+
+.footer {
+  background-color: black;
+  color: white;
+}
+
+/* ===================================main Section================================================ */
+.posts {
+  display: flex;
+  margin: 20px 0;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.content_area {
+  flex-direction: column;
+}
+
+.post {
+  width: 100%;
+  text-align: center;
+}
+
+.img-fluid {
+  width: 100%;
+  object-fit: cover;
+}
+
+.post h3 {
+  background-color: gold;
+  margin-top: -6px;
+  text-transform: capitalize;
+  font-size: 24px;
+  font-weight: 900;
+}
+
+.post p {
+  background-color: white;
+  margin-bottom: 20px;
+}
+
+.post h3,
+.post p {
+  padding: 20px;
+  color: rgb(7, 5, 29)
+}
+
+.watch-card {
+  background-color: black;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.watch-content {
+  padding: 30px;
+
+}
+
+.watch-content h3,
+.watch-content p {
+  margin-bottom: 30px;
+}
+
+.watch-content a {
+  color: #fff;
+  text-decoration: underline;
+}
+
+.watch-content p span {
+  margin-right: 15px;
+}
+
+.watch-img img {
+  height: 100%;
+}
+
+/* ===============================download section=========================== */
+.download-link {
+  text-decoration: none;
+  background-color: black;
+  color: #fff;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.download-gener {
+
+  margin-bottom: 10px;
+}
+
+.download-cast,
+.download-gener {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.download-card {
+  background-color: #000;
+}
+
+.download-cast img {
+  height: 50px;
+  border-radius: 50%;
+  margin-left: 5px;
+}
+
+.download-info {
+  padding: 20px;
+}
+
+.download-rating {
+  padding: 20px;
+  text-align: center;
+  background-color: gold;
+}
+
+.download-content {
+  background-color: #fff;
+  /* transform: translate(0px, -10px); */
+
+}
+
+.download-cast h4 {
+  align-self: center;
+}
+
+
+/* =====================================gallary section======================== */
+
+.gallary-imgs {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.gallary-img img {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+
+.gallary-img {
+  height: 250px;
+  flex-grow: 1;
+  margin: 0 0 8px 8px;
+}
+
+.gallary-img a {
+  display: block;
+  height: 100%;
+}
+
+.gallary-img:nth-child(4n + 1) {
+  flex-basis: 250px;
+}
+
+.gallary-img:nth-child(4n + 2) {
+  flex-basis: 325px;
+}
+
+.gallary-img:nth-child(4n + 3) {
+  flex-basis: 180px;
+}
+
+.gallary-img:nth-child(4n + 4) {
+  flex-basis: 420px;
+}
+
+
+.footer p {
+  text-align: center;
+  color: #fff;
+  padding: 30px;
+  font-size: 28px;
+}
+
+.widget-content {
+  background-color: #fff;
+  padding: 20px;
+  text-transform: capitalize;
+  font-weight: 700;
+  margin-bottom: 20px;
+
+}
+
+nav.side-bar-menu {
+  padding: 5px 20px;
+}
+
+.side-bar-menu li a {
+
+  color: #000;
+}
+
+@media all and (min-width:1200px) and (min-width:768px) {
+
+
+  .posts {
+    flex-direction: row;
+    margin: 20px 0;
+    padding: 0 15px;
+  }
+
+  .navbar {
+    flex-direction: row;
+  }
+
+  .content_area {
+    flex-direction: row;
+  }
+
+  .post {
+    text-align: center;
+  }
+
+  .post-half {
+    width: 49%;
+  }
+
+
+
+  .post-one-third {
+    width: 32%;
+  }
+
+  .post-full {
+    width: 100%;
+  }
+
+  .watch-card {
+    flex-direction: row;
+
+  }
+
+  .watch-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .img-right .watch-img {
+    order: 1;
+  }
+
+  .download-content {
+    display: flex;
+
+  }
+
+  .download-content>* {
+    flex-grow: 1;
+  }
+}
