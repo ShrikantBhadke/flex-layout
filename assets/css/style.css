@@ -76,6 +76,7 @@
   margin: 20px 0;
   flex-wrap: wrap;
   justify-content: space-between;
+
 }
 
 .content_area {
@@ -284,6 +285,7 @@ nav.side-bar-menu {
 
   .post-half {
     width: 49%;
+
   }
 
 
@@ -294,6 +296,10 @@ nav.side-bar-menu {
 
   .post-full {
     width: 100%;
+  }
+
+  .watch {
+    padding: 0 15px;
   }
 
   .watch-card {
@@ -309,6 +315,10 @@ nav.side-bar-menu {
 
   .img-right .watch-img {
     order: 1;
+  }
+
+  .downloadNow {
+    padding: 0 15px;
   }
 
   .download-content {
